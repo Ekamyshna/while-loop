@@ -1,0 +1,20 @@
+# Defining variables below
+
+total_number = 0
+count = 0
+average = 0
+
+# Using while True loop, asking for user to always input a number
+# When the user enters -1, the program should stop requesting the user to enter a number
+# Calculating the average of the numbers entered, excluding the -1.
+
+while True:
+    user_input = int(input("Please enter a number, enter (-1 to exit): "))
+
+    if user_input == -1:
+        break
+
+    total_number += user_input
+    count += 1
+average = total_number / count
+print("The average is: " + str(average))
